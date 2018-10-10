@@ -1,4 +1,4 @@
-package gleroy.com.mybaseapplication.data.remote.api.base.error;
+package gleroy.com.mybaseapplication.data.remote.api.base.exception;
 
 import android.support.annotation.Nullable;
 

@@ -14,7 +14,7 @@ class MyRepository @Inject constructor(private val remoteSource: MyRemoteSource,
                                        private val localSource: MyLocalSource) : IRepository<MyLocalObject> {
 
     override fun fetch(param: RequestParameter): Maybe<MyLocalObject> {
-        val response = remoteSource.get().map { MyLocalObject() }
+        val response = remoteSource.get(param).map { MyLocalObject() }
         return response
     }
 

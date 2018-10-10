@@ -41,7 +41,7 @@ public class MyApplication extends Application implements HasActivityInjector {
      */
     protected AppComponent createComponent() {
         AppComponent.Builder builder = DaggerAppComponent.builder();
-        builder.netModule(new NetModule(this));
+        builder.netModule(new NetModule());
         builder.appModule(new AppModule(this));
         return builder.build();
     }

@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 import javax.inject.Singleton;
 
 import gleroy.com.mybaseapplication.data.remote.api.base.MyApi;
@@ -27,7 +28,7 @@ public class RequestsGenerator {
     private OkHttpClient mOkHttpClient;
 
     @Inject
-    public RequestsGenerator(@NonNull String baseUrl,
+    public RequestsGenerator(@NonNull @Named("base_url") String baseUrl,
                              @NonNull OkHttpClient okHttpClient) {
         mBaseUrl = baseUrl;
         mOkHttpClient = okHttpClient;
