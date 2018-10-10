@@ -1,0 +1,26 @@
+allprojects {
+    ext {
+        dagger = '2.16'
+        android_arch = '1.1.0'
+        okhttp = '3.10.0'
+        retrofit = '2.4.0'
+        dependencies = [
+                dagger                  : "com.google.dagger:dagger:$dagger",
+                dagger_compiler         : "com.google.dagger:dagger-compiler:$dagger",
+                dagger_android_processor: "com.google.dagger:dagger-android-processor:$dagger",
+                dagger_support          : "com.google.dagger:dagger-android-support:$dagger",
+                android_arch_ext          : "android.arch.lifecycle:extensions:$android_arch",
+                android_arch_react_stream : "android.arch.lifecycle:reactivestreams:$android_arch",
+                android_arch_compiler     : "android.arch.lifecycle:compiler:$android_arch",
+                android_arch_room         : "android.arch.persistence.room:runtime:1.0.0",
+                android_arch_room_compiler: "android.arch.persistence.room:compiler:1.0.0",
+                android_arch_room_rx      : "android.arch.persistence.room:rxjava2:1.0.0",
+                okhttp                    : "com.squareup.okhttp3:okhttp:$okhttp",
+                retrofit                  : "com.squareup.retrofit2:retrofit:$retrofit",
+                retrofit_mock             : "com.squareup.retrofit2:retrofit-mock:$retrofit",
+                retrofitxmlconverter      : "com.squareup.retrofit2:converter-simplexml:$retrofit",
+                retrofitgsonconverter     : "com.squareup.retrofit2:converter-gson:$retrofit",
+                retrofit_log_interceptor  : "com.squareup.okhttp3:logging-interceptor:$okhttp",
+        ]
+    }
+}

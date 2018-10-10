@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="TextBase.Big.Medium.BlackColor" parent="TextAppearance.AppCompat">
+
+    </style>
+
+    <style name="TextBase" parent="TextAppearance.AppCompat" />
+
+    <style name="TextBase.Small" parent="TextBase">
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <style name="TextBase.Normal" parent="TextBase">
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="TextBase.Big" parent="TextBase">
+        <item name="android:textSize">@dimen/font_big</item>
+    </style>
+
+    <style name="TextBase.Small.Light" parent="TextBase.Small">
+        <item name="android:fontWeight">@integer/font_weight_thin</item>
+    </style>
+
+    <style name="TextBase.Small.Medium" parent="TextBase.Small">
+        <item name="android:fontWeight">@integer/font_weight_medium</item>
+    </style>
+
+    <style name="TextBase.Small.Bold" parent="TextBase.Small">
+        <item name="android:fontWeight">@integer/font_weight_bold</item>
+    </style>
+
+    <style name="TextBase.Normal.Light" parent="TextBase.Small">
+        <item name="android:fontWeight">@integer/font_weight_thin</item>
+    </style>
+
+    <style name="TextBase.Normal.Medium" parent="TextBase.Small">
+        <item name="android:fontWeight">@integer/font_weight_medium</item>
+    </style>
+
+    <style name="TextBase.Normal.Bold" parent="TextBase.Small">
+        <item name="android:fontWeight">@integer/font_weight_bold</item>
+    </style>
+
+    <style name="TextBase.Big.Light" parent="TextBase.Small">
+        <item name="android:fontWeight">@integer/font_weight_thin</item>
+    </style>
+
+    <style name="TextBase.Big.Medium" parent="TextBase.Small">
+        <item name="android:fontWeight">@integer/font_weight_medium</item>
+    </style>
+
+    <style name="TextBase.Big.Bold" parent="TextBase.Small">
+        <item name="android:fontWeight">@integer/font_weight_bold</item>
+    </style>
+
+
+</resources>
