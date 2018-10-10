@@ -1,4 +1,4 @@
-package gleroy.com.mybaseapplication.utils
+package gleroy.com.mybaseapplication.utils.livedata
 
 import android.arch.lifecycle.LifecycleOwner
 import android.arch.lifecycle.MutableLiveData

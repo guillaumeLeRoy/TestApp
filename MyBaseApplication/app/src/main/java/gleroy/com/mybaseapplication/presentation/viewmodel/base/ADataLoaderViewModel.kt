@@ -6,7 +6,7 @@ import android.support.annotation.MainThread
 import gleroy.com.mybaseapplication.data.repository.base.IRepository
 import gleroy.com.mybaseapplication.data.request.RequestParameter
 import gleroy.com.mybaseapplication.presentation.viewmodel.state.Error
-import gleroy.com.mybaseapplication.utils.FirstNotifierLiveData
+import gleroy.com.mybaseapplication.utils.livedata.FirstNotifierLiveData
 import io.reactivex.Single
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable

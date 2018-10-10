@@ -8,7 +8,7 @@ import android.support.annotation.MainThread
 import android.support.annotation.StringRes
 import gleroy.com.mybaseapplication.presentation.viewmodel.state.Error
 import gleroy.com.mybaseapplication.presentation.viewmodel.state.ViewState
-import gleroy.com.mybaseapplication.utils.SingleLiveEvent
+import gleroy.com.mybaseapplication.utils.livedata.SingleLiveEvent
 import timber.log.Timber
 
 abstract class AStatesViewModel<T>(application: Application) : AndroidViewModel(application) {

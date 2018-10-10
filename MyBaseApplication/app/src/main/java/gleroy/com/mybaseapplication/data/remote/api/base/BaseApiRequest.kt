@@ -5,6 +5,7 @@ import gleroy.com.mybaseapplication.data.remote.base.RequestUtils
 import gleroy.com.mybaseapplication.data.remote.base.RequestsGenerator
 import gleroy.com.mybaseapplication.data.remote.entity.error.ErrorModel
 import gleroy.com.mybaseapplication.data.remote.entity.error.ErrorsModel
+import io.reactivex.Maybe
 import io.reactivex.subjects.MaybeSubject
 import okhttp3.ResponseBody
 import retrofit2.Call
@@ -15,11 +16,16 @@ import java.net.HttpURLConnection
 abstract class BaseApiRequest<Result>(private val requestUtils: RequestUtils) {
 
     @Throws(Exception::class)
-    abstract fun executeRequest(requestsGenerator: RequestsGenerator): Call<Result>
+    protected abstract fun executeRequest(requestsGenerator: RequestsGenerator): Call<Result>
 
-    private var RxResponse: MaybeSubject<Result> = MaybeSubject.create<Result>()
+    private val RxResponse: MaybeSubject<Result> = MaybeSubject.create<Result>()
+
+    fun getResponse(): Maybe<Result> {
+        return RxResponse
+    }
 
     fun execute() {
+        Timber.d("execute")
         executeCall()
     }
 
@@ -41,7 +47,7 @@ abstract class BaseApiRequest<Result>(private val requestUtils: RequestUtils) {
 
     @Throws(AJobException::class)
     private fun onExceptionReceived(call: Call<Result>, response: Response<Result>?, e: Exception) {
-        Timber.e(e, "onRun, exception")
+        Timber.e(e, "onExceptionReceived")
         if (e is AJobException) {
             //if we already handled this exception ( ie an AJobException was created ) just throw it again
             throw e
@@ -105,7 +111,7 @@ abstract class BaseApiRequest<Result>(private val requestUtils: RequestUtils) {
                     RxResponse.onSuccess(result)
                 }
             } catch (e: Exception) {
-                Timber.e(e, "onSuccess exception")
+                Timber.e("onSuccess exception")
                 throw SuccessParsingException(statusCode, method, url)
             }
 
@@ -194,7 +200,7 @@ abstract class BaseApiRequest<Result>(private val requestUtils: RequestUtils) {
     }
 
     protected fun onCancel(throwable: Throwable?) {
-        Timber.d("onCancel, throwable : " + throwable + ", this = " + this)
+        Timber.d("onCancel, throwable : $throwable")
 
         //wrap exception around a {@link AJobException}
         val jobException: AJobException

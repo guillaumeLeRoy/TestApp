@@ -17,24 +17,7 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-
-    <style name="TextBase.Big.Medium.BlackColor" parent="TextAppearance.AppCompat">
-
-    </style>
-
     <style name="TextBase" parent="TextAppearance.AppCompat" />
-
-    <style name="TextBase.Small" parent="TextBase">
-        <item name="android:textSize">@dimen/font_small</item>
-    </style>
-
-    <style name="TextBase.Normal" parent="TextBase">
-        <item name="android:textSize">@dimen/font_normal</item>
-    </style>
-
-    <style name="TextBase.Big" parent="TextBase">
-        <item name="android:textSize">@dimen/font_big</item>
-    </style>
 
     <style name="TextBase.Small.Light" parent="TextBase.Small">
         <item name="android:fontWeight">@integer/font_weight_thin</item>
@@ -48,27 +31,27 @@
         <item name="android:fontWeight">@integer/font_weight_bold</item>
     </style>
 
-    <style name="TextBase.Normal.Light" parent="TextBase.Small">
+    <style name="TextBase.Normal.Light" parent="TextBase.Normal">
         <item name="android:fontWeight">@integer/font_weight_thin</item>
     </style>
 
-    <style name="TextBase.Normal.Medium" parent="TextBase.Small">
+    <style name="TextBase.Normal.Medium" parent="TextBase.Normal">
         <item name="android:fontWeight">@integer/font_weight_medium</item>
     </style>
 
-    <style name="TextBase.Normal.Bold" parent="TextBase.Small">
+    <style name="TextBase.Normal.Bold" parent="TextBase.Normal">
         <item name="android:fontWeight">@integer/font_weight_bold</item>
     </style>
 
-    <style name="TextBase.Big.Light" parent="TextBase.Small">
+    <style name="TextBase.Big.Light" parent="TextBase.Big">
         <item name="android:fontWeight">@integer/font_weight_thin</item>
     </style>
 
-    <style name="TextBase.Big.Medium" parent="TextBase.Small">
+    <style name="TextBase.Big.Medium" parent="TextBase.Big">
         <item name="android:fontWeight">@integer/font_weight_medium</item>
     </style>
 
-    <style name="TextBase.Big.Bold" parent="TextBase.Small">
+    <style name="TextBase.Big.Bold" parent="TextBase.Big">
         <item name="android:fontWeight">@integer/font_weight_bold</item>
     </style>
 

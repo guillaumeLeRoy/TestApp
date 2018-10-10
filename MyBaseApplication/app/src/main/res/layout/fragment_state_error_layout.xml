@@ -17,7 +17,8 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/default_error_content"
-            android:textAppearance="@style/TextBase.Big.Medium.BlackColor" />
+            android:textAppearance="@style/TextBase.Big.Medium.BlackColor"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/ui_error_retry"

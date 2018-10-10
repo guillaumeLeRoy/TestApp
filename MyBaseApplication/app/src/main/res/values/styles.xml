@@ -35,6 +35,31 @@
     </style>
 
 
+    <style name="TextBase.Normal.Light" parent="TextBase.Normal">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextBase.Normal.Medium" parent="TextBase.Normal">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextBase.Normal.Bold" parent="TextBase.Normal">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextBase.Big.Light" parent="TextBase.Big">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextBase.Big.Medium" parent="TextBase.Big">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextBase.Big.Bold" parent="TextBase.Big">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
     <style name="TextBase.Normal.Medium.BlackColor" parent="TextBase.Normal.Medium">
         <item name="android:textColor">@color/black</item>
     </style>
@@ -52,7 +77,6 @@
     </style>
 
 
-
     <style name="TextBase.Big.Medium.BlackColor" parent="TextBase.Big.Medium">
         <item name="android:textColor">@color/black</item>
     </style>
@@ -68,8 +92,6 @@
     <style name="TextBase.Big.Medium.White" parent="TextBase.Big.Medium">
         <item name="android:textColor">@color/white</item>
     </style>
-
-
 
 
 </resources>
