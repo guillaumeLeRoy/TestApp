@@ -15,6 +15,7 @@ import dagger.android.DispatchingAndroidInjector
 import dagger.android.support.HasSupportFragmentInjector
 import gleroy.com.mybaseapplication.R
 import gleroy.com.mybaseapplication.presentation.fragment.MyFragment
+import gleroy.com.mybaseapplication.presentation.fragment.TodosFragment
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
 import javax.inject.Inject
@@ -47,7 +48,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                    .replace(R.id.fragment_container, MyFragment())
+                    .replace(R.id.fragment_container, TodosFragment())
                     .addToBackStack(null)
                     .commit()
         }
