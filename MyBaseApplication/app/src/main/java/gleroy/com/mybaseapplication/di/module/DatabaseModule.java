@@ -1,5 +1,6 @@
 package gleroy.com.mybaseapplication.di.module;
 
+import android.app.Application;
 import android.arch.persistence.room.Room;
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -16,8 +17,8 @@ public class DatabaseModule {
 
     @Provides
     @Singleton
-    MyDatabase providesDatabase(Context context) {
-        return Room.databaseBuilder(context.getApplicationContext(), MyDatabase.class, "my_db")
+    MyDatabase providesDatabase(Application application) {
+        return Room.databaseBuilder(application, MyDatabase.class, "my_db")
                 .fallbackToDestructiveMigration()
                 .build();
     }

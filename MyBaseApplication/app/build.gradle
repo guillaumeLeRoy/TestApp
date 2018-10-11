@@ -44,6 +44,8 @@ dependencies {
     // RxJava support for Room
     implementation rootProject.ext.dependencies.android_arch_room_rx
     implementation rootProject.ext.dependencies.android_arch_room
+    kapt rootProject.ext.dependencies.android_arch_room_compiler
+
     // ReactiveStreams support for LiveData
     implementation rootProject.ext.dependencies.android_arch_react_stream
 
