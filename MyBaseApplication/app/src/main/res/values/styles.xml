@@ -22,74 +22,74 @@
 
     <style name="TextBase" parent="TextAppearance.AppCompat" />
 
-    <style name="TextBase.Small" parent="TextBase">
+    <style name="TextBase.Small">
         <item name="android:textSize">@dimen/font_small</item>
     </style>
 
-    <style name="TextBase.Normal" parent="TextBase">
+    <style name="TextBase.Normal">
         <item name="android:textSize">@dimen/font_normal</item>
     </style>
 
-    <style name="TextBase.Big" parent="TextBase">
+    <style name="TextBase.Big">
         <item name="android:textSize">@dimen/font_big</item>
     </style>
 
 
-    <style name="TextBase.Normal.Light" parent="TextBase.Normal">
+    <style name="TextBase.Normal.Light">
         <item name="android:textStyle">normal</item>
     </style>
 
-    <style name="TextBase.Normal.Medium" parent="TextBase.Normal">
+    <style name="TextBase.Normal.Medium">
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="TextBase.Normal.Bold" parent="TextBase.Normal">
+    <style name="TextBase.Normal.Bold">
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="TextBase.Big.Light" parent="TextBase.Big">
+    <style name="TextBase.Big.Light">
         <item name="android:textStyle">normal</item>
     </style>
 
-    <style name="TextBase.Big.Medium" parent="TextBase.Big">
+    <style name="TextBase.Big.Medium">
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="TextBase.Big.Bold" parent="TextBase.Big">
+    <style name="TextBase.Big.Bold">
         <item name="android:textStyle">bold</item>
     </style>
 
 
-    <style name="TextBase.Normal.Medium.BlackColor" parent="TextBase.Normal.Medium">
+    <style name="TextBase.Normal.Medium.BlackColor">
         <item name="android:textColor">@color/black</item>
     </style>
 
-    <style name="TextBase.Normal.Medium.Primary" parent="TextBase.Normal.Medium">
+    <style name="TextBase.Normal.Medium.Primary">
         <item name="android:textColor">@color/textColorPrimary</item>
     </style>
 
-    <style name="TextBase.Normal.Medium.Secondary" parent="TextBase.Normal.Medium">
+    <style name="TextBase.Normal.Medium.Secondary">
         <item name="android:textColor">@color/textColorSecondary</item>
     </style>
 
-    <style name="TextBase.Normal.Medium.White" parent="TextBase.Normal.Medium">
+    <style name="TextBase.Normal.Medium.White">
         <item name="android:textColor">@color/white</item>
     </style>
 
 
-    <style name="TextBase.Big.Medium.BlackColor" parent="TextBase.Big.Medium">
+    <style name="TextBase.Big.Medium.BlackColor">
         <item name="android:textColor">@color/black</item>
     </style>
 
-    <style name="TextBase.Big.Medium.Primary" parent="TextBase.Big.Medium">
+    <style name="TextBase.Big.Medium.Primary">
         <item name="android:textColor">@color/textColorPrimary</item>
     </style>
 
-    <style name="TextBase.Big.Medium.Secondary" parent="TextBase.Big.Medium">
+    <style name="TextBase.Big.Medium.Secondary">
         <item name="android:textColor">@color/textColorSecondary</item>
     </style>
 
-    <style name="TextBase.Big.Medium.White" parent="TextBase.Big.Medium">
+    <style name="TextBase.Big.Medium.White">
         <item name="android:textColor">@color/white</item>
     </style>
 

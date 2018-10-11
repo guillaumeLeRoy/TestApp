@@ -8,11 +8,11 @@
 
     <dimen name="corners">4dp</dimen>
 
-    <dimen name="app_padding_very_small">4dp</dimen>
-    <dimen name="app_padding_small">8dp</dimen>
-    <dimen name="app_padding_medium">10dp</dimen>
-    <dimen name="app_padding_big">16dp</dimen>
-    <dimen name="app_padding_very_big">24dp</dimen>
+    <dimen name="very_small">4dp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="medium">10dp</dimen>
+    <dimen name="big">16dp</dimen>
+    <dimen name="very_big">24dp</dimen>
 
     <dimen name="font_small">10sp</dimen>
     <dimen name="font_normal">12sp</dimen>

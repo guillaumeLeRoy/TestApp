@@ -43,7 +43,7 @@ abstract class ARecyclerFragment<VM : ARecyclerViewModel<*>> : AStatesFragment<V
     }
 
     open fun getItemDecoration(): RecyclerView.ItemDecoration {
-        return HorizontalItemDecorator(context?.resources?.getDimensionPixelOffset(R.dimen.app_padding_small)
+        return HorizontalItemDecorator(context?.resources?.getDimensionPixelOffset(R.dimen.small)
                 ?: 0)
     }
 }

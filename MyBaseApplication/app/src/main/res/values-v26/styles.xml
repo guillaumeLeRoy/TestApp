@@ -17,41 +17,39 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="TextBase" parent="TextAppearance.AppCompat" />
-
-    <style name="TextBase.Small.Light" parent="TextBase.Small">
+    <style name="TextBase.Small.Light">
         <item name="android:fontWeight">@integer/font_weight_thin</item>
     </style>
 
-    <style name="TextBase.Small.Medium" parent="TextBase.Small">
+    <style name="TextBase.Small.Medium">
         <item name="android:fontWeight">@integer/font_weight_medium</item>
     </style>
 
-    <style name="TextBase.Small.Bold" parent="TextBase.Small">
+    <style name="TextBase.Small.Bold">
         <item name="android:fontWeight">@integer/font_weight_bold</item>
     </style>
 
-    <style name="TextBase.Normal.Light" parent="TextBase.Normal">
+    <style name="TextBase.Normal.Light">
         <item name="android:fontWeight">@integer/font_weight_thin</item>
     </style>
 
-    <style name="TextBase.Normal.Medium" parent="TextBase.Normal">
+    <style name="TextBase.Normal.Medium">
         <item name="android:fontWeight">@integer/font_weight_medium</item>
     </style>
 
-    <style name="TextBase.Normal.Bold" parent="TextBase.Normal">
+    <style name="TextBase.Normal.Bold">
         <item name="android:fontWeight">@integer/font_weight_bold</item>
     </style>
 
-    <style name="TextBase.Big.Light" parent="TextBase.Big">
+    <style name="TextBase.Big.Light">
         <item name="android:fontWeight">@integer/font_weight_thin</item>
     </style>
 
-    <style name="TextBase.Big.Medium" parent="TextBase.Big">
+    <style name="TextBase.Big.Medium">
         <item name="android:fontWeight">@integer/font_weight_medium</item>
     </style>
 
-    <style name="TextBase.Big.Bold" parent="TextBase.Big">
+    <style name="TextBase.Big.Bold">
         <item name="android:fontWeight">@integer/font_weight_bold</item>
     </style>
 
