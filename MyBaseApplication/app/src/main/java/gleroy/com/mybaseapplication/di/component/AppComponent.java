@@ -7,6 +7,7 @@ import dagger.android.AndroidInjectionModule;
 import gleroy.com.mybaseapplication.MyApplication;
 import gleroy.com.mybaseapplication.di.module.AndroidBindingModule;
 import gleroy.com.mybaseapplication.di.module.AppModule;
+import gleroy.com.mybaseapplication.di.module.DatabaseModule;
 import gleroy.com.mybaseapplication.di.module.NetModule;
 import gleroy.com.mybaseapplication.di.module.ViewModelModule;
 
@@ -16,7 +17,8 @@ import gleroy.com.mybaseapplication.di.module.ViewModelModule;
         AppModule.class,
         NetModule.class,
         ViewModelModule.class,
-        AndroidBindingModule.class})
+        AndroidBindingModule.class,
+        DatabaseModule.class})
 public interface AppComponent {
 
     @Component.Builder

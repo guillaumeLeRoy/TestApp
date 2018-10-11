@@ -1,4 +1,4 @@
-package gleroy.com.mybaseapplication.data.remote.api
+package gleroy.com.mybaseapplication.data.remote.api.request
 
 import gleroy.com.mybaseapplication.data.remote.api.base.BaseApiRequest
 import gleroy.com.mybaseapplication.data.remote.api.parameter.GetTodosRequestParam
@@ -7,7 +7,7 @@ import gleroy.com.mybaseapplication.data.remote.base.RequestsGenerator
 import gleroy.com.mybaseapplication.data.remote.entity.Todo
 import retrofit2.Call
 
-class GetTodosFromApi(param: GetTodosRequestParam, requestUtils: RequestUtils) : BaseApiRequest<List<Todo>>(requestUtils) {
+class GetTodosApiRequest(param: GetTodosRequestParam, requestUtils: RequestUtils) : BaseApiRequest<List<Todo>>(requestUtils) {
 
     override fun executeRequest(requestsGenerator: RequestsGenerator): Call<List<Todo>> {
         return requestsGenerator.api.getTodos
