@@ -30,6 +30,6 @@ public class NetModule {
     @Provides
     @Named("base_url")
     String provideBaseUrl() {
-        return "https://jsonplaceholder.typicode.com";
+        return "http://jsonplaceholder.typicode.com";
     }
 }
